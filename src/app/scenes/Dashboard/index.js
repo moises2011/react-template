@@ -34,7 +34,7 @@ export class Dashboard extends Component {
 }
 
 const mapStateToProps = (state) => {
-  return Object.assign({},state);
+  return { ...state };
 }
 
 export default connect(mapStateToProps, {navigate})(Dashboard);
